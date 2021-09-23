@@ -167,24 +167,22 @@ section#information-container {
 /* SECTION ACCESSORIES  */
 
 #wrapp-slide {
-  /* height: 100vh; */
   display: flex;
   justify-content: center;
   padding: 2rem 0;
-  /* align-items: center; */
   background-color: #ececec;
 }
 
 .slider {
   width: 90vw;
-  height: 50vh;
+  height: 80vh;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .slides {
   width: 500%;
-  height: 50vh;
+  height: 80vh;
   display: flex;
 }
 
@@ -194,7 +192,7 @@ section#information-container {
 
 .slide {
   width: 20%;
-  transition: 500ms;
+  transition: 300ms;
 }
 
 .slide img {
@@ -205,7 +203,7 @@ section#information-container {
 .navigation-manual {
   position: absolute;
   width: 90vw;
-  margin-top: 18rem;
+  margin-top: 29rem;
   display: flex;
   justify-content: center;
 }
