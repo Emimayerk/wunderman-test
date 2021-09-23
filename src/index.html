@@ -17,25 +17,27 @@
 
 <body id="body">
     <header id="header">
-        <button id="btn-menu" class="btn-menu hamburger hamburger--emphatic" type="button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
-        <figure class="logo-header">
-            <a href="">
-                <img src="" alt="" id="icon-link">
-            </a>
-        </figure>
-    </header>
-    <main>
+        <div class="header-content">
+            <button id="btn-menu" class="btn-menu hamburger hamburger--emphatic" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <figure class="logo-header">
+                <a href="">
+                    <img src="" alt="" id="icon-link">
+                </a>
+            </figure>
+        </div>
         <aside class="menu-container">
             <nav class="nav-menu">
-                <a href="" class="items-menu">Información</a>
-                <a href="" class="items-menu">Directorio</a>
-                <a href="" class="items-menu">Extras</a>
+                <a href="#information-container" class="items-menu" id="item-information">Información</a>
+                <a href="#directory-section" class="items-menu" id="item-directory">Directorio</a>
+                <a href="#section-accessories" class="items-menu" id="item-accessories">Extras</a>
             </nav>
         </aside>
+    </header>
+    <main>
         <section id="information-container">
             <div class="box-principal-title">
                 <h1>Título principal</h1>
@@ -65,25 +67,69 @@
                 </div>
             </article>
         </section>
-        <section id="directory-container">
+        <section id="directory-section">
             <div class="box-principal-title">
                 <h1>Directorios</h1>
             </div>
-            <div class="box-directory">
-                <i class="fas fa-angle-right"></i>
-                <figure class="folder">
-                    <img src="" alt="" class="folder-icon">
-                </figure>
-                <div class="title"></div>
-            </div>
-            <div class="box-directory">
-                <i class="fas fa-angle-right"></i>
-                <figure class="folder">
-                    <img src="" alt="" class="folder-icon">
-                </figure>
-                <div class="title"></div>
+            <div id="directory-container">
             </div>
         </section>
+        <section id="section-accessories">
+            <div class="box-principal-title">
+                <h1>Extras</h1>
+            </div>
+            <div id="wrapp-slide">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide first">
+                            <img src="./img/img1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/img2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/img3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/img4.jpg" alt="">
+                        </div>
+                        <div class="navigation-manual">
+                            <label class="manual-btn" id="manual-btn1"></label>
+                            <label class="manual-btn" id="manual-btn2"></label>
+                            <label class="manual-btn" id="manual-btn3"></label>
+                            <label class="manual-btn" id="manual-btn4"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="icon-socials">
+                <figure>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="./img/instagram.png" alt="">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="./img/linkedin.png" alt="">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://github.com" target="_blank">
+                        <img src="./img/github.png" alt="">
+
+                </figure>
+            </div>
+            <div class="terms-and-conditions">
+                <a href="#">
+                    <h5>Términos y condiciones</h5>
+                </a>
+            </div>
+            <div class="dev">
+                <h6>Developed by Emiliano Mayer Viegas</h6>
+            </div>
+        </footer>
     </main>
 </body>
 

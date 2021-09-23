@@ -1,11 +1,12 @@
 const HTMLWebPackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   mode: 'development',
   entry: './src/js/app.js',
   output: {
-    path: `${__dirname}/dist`,
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
   module: {
@@ -20,10 +21,16 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
+              esModule: false,
+              name: '[name].[ext]',
               outputPath: 'img',
             },
           },
         ],
+      },
+      {
+        test: /\.html$/,
+        use: ['html-loader'],
       },
     ],
   },
@@ -32,9 +39,7 @@ module.exports = {
       template: './src/index.html',
     }),
     new CopyPlugin({
-      patterns: [
-        { from: './public/json', to: './json' },
-      ],
+      patterns: [{ from: './public/json', to: './json' }],
     }),
   ],
 };
