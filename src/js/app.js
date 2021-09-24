@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
   if (initPosition > setInitPosition) {
     header.style.top = '0px';
   } else {
-    header.style.top = '-75px';
+    header.style.top = '-200px';
   }
 
   initPosition = setInitPosition;
