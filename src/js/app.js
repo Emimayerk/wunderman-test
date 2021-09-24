@@ -53,7 +53,6 @@ const fetchDirectory = async () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   fetchDirectory();
-  navigationAutomatic();
 });
 
 const renderDirectory = (data) => {
@@ -224,7 +223,7 @@ const renderDirectory = (data) => {
   });
 };
 
-//EVENT SLIDE
+// EVENT SLIDE
 
 const navigationManual = document.querySelector('.navigation-manual');
 
