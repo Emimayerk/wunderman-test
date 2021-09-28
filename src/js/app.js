@@ -1,13 +1,10 @@
-import '../css/mobile.css';
-import '../css/desktop.css';
-import Headericon from '../img/logo.png';
+import '../styles/app.css';
 import folderImg from '../img/folder.png';
 import fileImg from '../img/file.png';
 
 // HEADER AND MENU
 const toggleMenu = document.getElementById('btn-menu');
 const menuContainer = document.querySelector('.menu-container');
-const iconLink = document.getElementById('icon-link');
 const navMenu = document.querySelector('.nav-menu');
 
 navMenu.addEventListener('click', (e) => {
@@ -15,8 +12,6 @@ navMenu.addEventListener('click', (e) => {
   e.target.id === 'item-directory' ? menuContainer.classList.replace('menu-container-active', 'menu-container') & toggleMenu.classList.toggle('is-active') : 'null';
   e.target.id === 'item-accessories' ? menuContainer.classList.replace('menu-container-active', 'menu-container') & toggleMenu.classList.toggle('is-active') : 'null';
 });
-
-iconLink.setAttribute('src', `${Headericon}`);
 
 toggleMenu.addEventListener('click', () => {
   menuContainer.classList.toggle('menu-container-active');
@@ -222,16 +217,3 @@ const renderDirectory = (data) => {
     e.target.innerHTML === 'W0ViZx5cJr' ? (subFoldersTwo.hidden = !subFoldersTwo.hidden) & (subFileTwo.hidden = !subFileTwo.hidden) : null;
   });
 };
-
-// EVENT SLIDE
-
-const navigationManual = document.querySelector('.navigation-manual');
-
-navigationManual.addEventListener('click', (e) => {
-  e.stopPropagation();
-  const button = document.querySelector('.first');
-  e.target.id === 'manual-btn1' ? (button.style.marginLeft = '0%') : null;
-  e.target.id === 'manual-btn2' ? (button.style.marginLeft = '-20%') : null;
-  e.target.id === 'manual-btn3' ? (button.style.marginLeft = '-40%') : null;
-  e.target.id === 'manual-btn4' ? (button.style.marginLeft = '-60%') : null;
-});

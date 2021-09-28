@@ -21,11 +21,6 @@
 
     "no-invalid-regexp": "error",
 
-    "no-restricted-syntax": [
-      "error",
-      "FunctionExpression",
-      "WithStatement",
-      "BinaryExpression[operator='in']"
-    ]
+    "no-restricted-syntax": ["error", "FunctionExpression", "WithStatement", "BinaryExpression[operator='in']"]
   }
 }
