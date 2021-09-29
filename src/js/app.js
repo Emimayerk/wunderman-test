@@ -26,6 +26,7 @@ window.addEventListener('scroll', () => {
   const setInitPosition = window.pageYOffset;
   if (initPosition > setInitPosition) {
     header.style.top = '0px';
+    header.style.height = '0px';
   } else {
     header.style.top = '-200px';
   }
